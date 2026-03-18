@@ -42,7 +42,7 @@
             </div>
             <hr class="my-4 sm:mx-auto" />
             <div class="flex items-center justify-center">
-                <span class="text-sm text-body sm:text-center">© 2026 <a href="#" class="hover:underline">Aldan Saint Omer™</a>
+                <span class="text-sm text-body sm:text-center">© 2026 <a href="#" class="hover:underline">Aldan Saint Omer</a>
                 </span>
             </div>
         </div>

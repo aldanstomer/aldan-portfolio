@@ -1,26 +1,22 @@
 <script setup>
-import { ref } from "vue"
+import { computed } from "vue"
+import { useRoute, useRouter } from "vue-router"
 import ProjectGrid from "./ProjectGrid.vue"
 import image1 from "../../assets/7371.jpeg"
+import { designProjects } from "../../data/designProjects"
+import { devProjects } from "../../data/devProjects"
 
-const activeTab = ref("stats") 
-
-const webProjects = [
-  { slug: "idf", title: "IDF Curve Look-Up Tool", image: image1, href: "#", external: false, badge: "Latest" },
-  { slug: "dfh", title: "DFH Productions", image: image1, href: "https://www.dfhproductions.com", external: true, badge: "Latest" },
-  { slug: "fair-helen", title: "Discover Fair Helen", image: image1, href: "#", external: false, badge: "Latest" },
-  { slug: "certs", title: "Blockchain Digital Certificates", image: image1, href: "#", external: false, badge: "Latest" },
-]
-
-const designProjects = [
-  { slug: "logo-pack", title: "Logo Pack: Everyday Life Science", image: image1, href: "#", external: false, badge: "Featured" },
-  { slug: "nic-tm-posters", title: "Posters: NIC Toastmasters", image: image1, href: "#", external: false, badge: "Featured" },
-  { slug: "dfh-posters", title: "Posters: DFH Kayaking", image: image1, href: "#", external: false, badge: "Featured" },
-  { slug: "dfh-logo", title: "Logo Rebuild: Dive Fair Helen", image: image1, href: "#", external: false, badge: "Featured" },
-]
+const route = useRoute()
+const router = useRouter()
+const activeTab = computed(() => route.query.tab || "dev")
 
 function setTab(tab) {
-  activeTab.value = tab
+  router.replace({
+    query: {
+      ...route.query,
+      tab,
+    },
+  })
 }
 </script>
 
@@ -29,35 +25,49 @@ function setTab(tab) {
     <div class="overflow-auto mt-25 w-4/5 mx-auto border border-slate-700 rounded-xl shadow-xs">
         <ul class=" text-sm font-medium text-center text-body divide-x divide-slate-700 rounded-base flex">
             <li class="w-full">
-                <button type="button" @click="setTab('stats')" :class="[ 'inline-block w-full p-4  bg-slate-800', activeTab === 'stats' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
+                <button type="button" @click="setTab('dev')" :class="[ 'inline-block w-full p-4  bg-slate-800', activeTab === 'dev' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
                 Web Development
                 </button>
             </li>
             <li class="w-full">
-                <button type="button" @click="setTab('about')" :class="[ 'inline-block w-full p-4 bg-slate-800', activeTab === 'about' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
+                <button type="button" @click="setTab('design')" :class="[ 'inline-block w-full p-4 bg-slate-800', activeTab === 'design' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
                 Graphic Design
                 </button>
             </li>
         </ul>
         <div id="fullWidthTabContent" class="border-t border-slate-700">
-            <div v-show="activeTab === 'stats'" class="p-4 rounded-base md:p-8" id="stats">
+            <div v-show="activeTab === 'dev'" class="p-4 rounded-base md:p-8" id="dev">
                 <dl class="grid grid-cols-3 gap-12 max-w-2xl mx-auto text-center">
                     <div class="flex flex-col">
                         <dt class="mb-2 text-2xl font-semibold tracking-tight">3+</dt>
-                        <dd>Years of developing</dd>
+                        <dd>Years of Developing</dd>
                     </div>
                     <div class="flex flex-col">
                         <dt class="mb-2 text-2xl font-semibold tracking-tight">5+</dt>
-                        <dd>Major projects</dd>
+                        <dd>Major Projects</dd>
                     </div>
                     <div class="flex flex-col">
                         <dt class="mb-2 text-2xl font-semibold tracking-tight">10+</dt>
-                        <dd>Technologies mastered</dd>
+                        <dd>Technologies Mastered</dd>
                     </div>
                 </dl>
-                <ProjectGrid :projects="webProjects" />
+                <ProjectGrid :projects="devProjects" />
             </div>
-            <div v-show="activeTab === 'about'" class="p-4 rounded-base md:p-8" id="about">
+            <div v-show="activeTab === 'design'" class="p-4 rounded-base md:p-8" id="design">
+                <dl class="grid grid-cols-3 gap-12 max-w-2xl mx-auto text-center">
+                    <div class="flex flex-col">
+                        <dt class="mb-2 text-2xl font-semibold tracking-tight">3+</dt>
+                        <dd>Years of Design</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="mb-2 text-2xl font-semibold tracking-tight">5+</dt>
+                        <dd>Brands and Campaigns Supported</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="mb-2 text-2xl font-semibold tracking-tight">30+</dt>
+                        <dd>Visual Assests Created</dd>
+                    </div>
+                </dl>
                 <ProjectGrid :projects="designProjects" />
             </div>
         </div>

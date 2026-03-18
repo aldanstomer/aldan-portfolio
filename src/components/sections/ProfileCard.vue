@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative w-full max-w-sm mx-auto p-2 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-white/5 border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)] backdrop-blur-md">
+    <div class="relative w-full max-w-sm mx-auto p-1 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-white/5 border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div class="relative rounded-[2.25rem] overflow-hidden border border-slate-700 bg-slate-900 shadow-xl">
             <div class="relative">
                 <img :src="headshot" :alt="props.name" class="w-full aspect-[3/4] object-cover" />
