@@ -22,7 +22,7 @@ function setTab(tab) {
 
 <template>
   <div class="overflow-auto mt-25 w-4/5 mx-auto border border-slate-700 rounded-xl shadow-xs">
-    <ul class=" text-sm font-medium text-center text-body divide-x divide-slate-700 rounded-base flex">
+    <ul class="text-sm font-medium text-center text-body divide-x divide-slate-700 flex items-stretch">
       <li class="w-full">
         <button type="button" @click="setTab('dev')" :class="[ 'inline-block w-full p-4  bg-slate-800', activeTab === 'dev' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
           Software Development
@@ -37,7 +37,7 @@ function setTab(tab) {
     <div id="fullWidthTabContent" class="border-t border-slate-700">
       <div v-show="activeTab === 'dev'" class="p-4 rounded-base md:p-8" id="dev">
         <div class="mb-10 text-center max-w-3xl mx-auto">
-          <h1 class="text-4xl font-semibold text-heading mb-4">Software Development Portfolio</h1>
+          <h1 class="text-3xl md:text-4xl font-semibold text-heading mb-4">Software Development Portfolio</h1>
           <p class="text-body text-lg leading-relaxed">
             A collection of projects focused on building impactful digital solutions across the Caribbean.
           </p>
@@ -59,14 +59,14 @@ function setTab(tab) {
             <dt class="mb-2 text-2xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-125">
               10+
             </dt>
-            <dd>Technologies Mastered</dd>
+            <dd>Tech Tools Mastered</dd>
           </div>
         </dl>   
         <ProjectGrid :projects="devProjects" />
       </div>
       <div v-show="activeTab === 'design'" class="p-4 rounded-base md:p-8" id="design">
         <div class="mb-10 text-center max-w-3xl mx-auto">
-          <h1 class="text-4xl font-semibold text-heading mb-4">Graphic Design Portfolio</h1>
+          <h1 class="text-3xl md:text-4xl font-semibold text-heading mb-4">Graphic Design Portfolio</h1>
           <p class="text-body text-lg leading-relaxed">
             Modern curated visuals that communicate clear ideas and elevate brand identity.
           </p>
