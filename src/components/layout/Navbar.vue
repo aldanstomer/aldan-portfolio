@@ -1,7 +1,13 @@
 <script setup>
-import { ref } from "vue"
+import { ref, watch } from "vue"
+import { useRoute } from "vue-router"
 
 const isMenuOpen = ref(false)
+const route = useRoute()
+
+watch(() => route.fullPath, () => {
+  isMenuOpen.value = false
+})
 </script>
 
 <template>

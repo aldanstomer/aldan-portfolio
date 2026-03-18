@@ -21,13 +21,13 @@ const props = defineProps({ name: { type: String }, subtitle: { type: String }})
                     </div>
                     <p class="mt-1 text-white/90 leading-snug">{{ props.subtitle }}</p>
                     <div class="mt-3 flex items-center gap-3">
-                        <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank" class="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-white/10 border border-white/10 text-white hover:bg-white/15 transition">
+                        <a href="https://linkedin.com/in/aldanstomer/" target="_blank" class="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-white/10 border border-white/10 text-white hover:bg-white/15 transition">
                             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.23 8.98h4.52V24H.23V8.98zM8.5 8.98h4.33v2.05h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.43 3.02 5.43 6.95V24h-4.52v-7.44c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94V24H8.5V8.98z"/>
                             </svg>
                             LinkedIn
                         </a>
-                        <a href="https://github.com/YOURUSERNAME" target="_blank" class="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-white/10 border border-white/10 text-white hover:bg-white/15 transition">
+                        <a href="https://github.com/aldanstomer/" target="_blank" class="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-white/10 border border-white/10 text-white hover:bg-white/15 transition">
                             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.98 3.23 9.2 7.71 10.69.56.1.76-.24.76-.54v-2.02c-3.14.68-3.8-1.51-3.8-1.51-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.5-.29-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.47.11-3.06 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.59.23 2.77.11 3.06.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.27-5.16 5.55.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.77.54 4.47-1.49 7.7-5.71 7.7-10.69C23.25 5.48 18.27.5 12 .5z"/>
                             </svg>
