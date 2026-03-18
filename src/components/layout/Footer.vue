@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <footer class="bg-slate-700 mt-20">
         <div class="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-4">

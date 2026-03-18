@@ -1,15 +1,7 @@
 <script setup>
 import headshot from '../../assets/aldan.jpg'
 
-const props = defineProps({
-  name: { type: String, default: 'Aldan Saint Omer' },
-  subtitle: {
-    type: String,
-    default: 'Developer • Designer • Environmentalist'
-  },
-  followers: { type: Number, default: 312 },
-  projects: { type: Number, default: 48 }
-})
+const props = defineProps({ name: { type: String }, subtitle: { type: String }})
 </script>
 
 <template>

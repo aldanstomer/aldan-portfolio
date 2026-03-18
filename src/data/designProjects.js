@@ -1,5 +1,3 @@
-import image1 from "../assets/7371.jpeg"
-
 const nicPostersImg = Object.values(
   import.meta.glob("../assets/designs/nic-tm-posters/*.{jpg,JPG,png}", {
     eager: true,
