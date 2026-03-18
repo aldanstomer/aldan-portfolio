@@ -38,14 +38,14 @@ const featured = computed(() => [
     </span>
   </Transition>
 </h1>
-        <p class="text-body text-lg max-w-2xl mb-7">Software Developer • Graphic Designer • Environmental Innovator. I build web platforms and visual systems that turn complex information into clear, usable experiences—especially for climate and development across the Caribbean.</p>
+        <p class="text-body text-lg max-w-2xl mb-7">I am a St. Lucian developer who builds systems that balance design and functionality for smooth experiences on the web and social media. I strive to be at the forefront of climate action and sustainable development across the Caribbean.</p>
 
       </div>
 
 <div class="lg:col-span-5">
         <ProfileCard
           name="Aldan Saint Omer"
-          subtitle="Software Developer • Graphic Designer • Environmental Innovator"
+          subtitle='"The most important investment you can make is in yourself."'
           :followers="312"
           :projects="48"
         />

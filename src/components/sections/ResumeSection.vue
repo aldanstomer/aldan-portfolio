@@ -25,9 +25,9 @@ const techStack = [
 ]
 
 const education = [
-    { slug: "uwi", logo: uwiLogo, school: "Universtiy of the West Indies", degree: "BSc in Computer Science with Economics", year: "2022"},
-    { slug: "salcc", logo:salccLogo, school: "Sir Arthur Lewis Community College", degree: "CAPE (Pure Math, Physics, Chemistry)", year: "2018"},
-    { slug: "smc", logo:smcLogo, school: "Saint Mary's College", degree: "10 CXC Subjects", year: "2016"}
+    { slug: "uwi", logo: uwiLogo, school: "Universtiy of the West Indies", degree: "BSc in Computer Science with Economics", year: "2022", color: "#FFDE17"},
+    { slug: "salcc", logo:salccLogo, school: "Sir Arthur Lewis Community College", degree: "CAPE (Pure Math, Physics, Chemistry)", year: "2018", color: "#FFFFFF"},
+    { slug: "smc", logo:smcLogo, school: "Saint Mary's College", degree: "10 CXC Subjects", year: "2016", color: "#FFFFFF"}
 ]
 </script>
 
