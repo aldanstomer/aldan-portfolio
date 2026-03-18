@@ -45,7 +45,7 @@ const education = [
 </style>
 
 <template>
-  <div class="w-4/5 max-w-6xl mx-auto mt-30">
+  <div class="w-9/10 md:w-4/5 max-w-6xl mx-auto mt-30">
     <div class="mb-12">
       <h1 class="text-4xl font-semibold text-heading mb-6">Resume</h1>
       <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6">

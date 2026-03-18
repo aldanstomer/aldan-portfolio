@@ -11,8 +11,9 @@
       <div>
         <h3 class="text-lg font-semibold text-heading">{{ e.school }}</h3>
         <p class="text-blue-300 text-sm">{{ e.degree }}</p>
+        <p class="text-body text-sm shrink-0 sm:hidden">{{ e.year }}</p>
       </div>
-      <span class="text-body text-sm shrink-0">{{ e.year }}</span>
+      <span class="hidden sm:block text-body text-sm shrink-0">{{ e.year }}</span>
     </div>
   </div>
 </template>

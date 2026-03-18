@@ -5,8 +5,8 @@ defineProps({ projects: { type: Array, required: true }})
 </script>
 
 <template>
-  <div class="grid gap-10 justify-items-center mt-10 px-6 mx-auto max-w-6xl grid-cols-1 md:grid-cols-2">
-    <div v-for="p in projects" :key="p.slug" class="bg-slate-800 w-full max-w-sm border border-slate-700 rounded-xl shadow-xs overflow-hidden flex flex-col">
+  <div class="grid gap-10 mt-10 w-full grid-cols-1 md:grid-cols-2">
+    <div v-for="p in projects" :key="p.slug" class="bg-slate-800 w-full max-w-sm mx-auto border border-slate-700 rounded-xl shadow-xs overflow-hidden flex flex-col">
       <component :is="p.external ? 'a' : RouterLink" :href="p.external ? p.href : undefined" :to="!p.external ? (p.type === 'design' ? `/designs/${p.slug}` : `/projects/${p.slug}`) : undefined" :target="p.external ? '_blank' : undefined" :rel="p.external ? 'noopener noreferrer' : undefined" class="block group">
         <img class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" :src="p.image" :alt="p.title" />
       </component>

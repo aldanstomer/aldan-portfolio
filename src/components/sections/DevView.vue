@@ -8,7 +8,7 @@ const project = computed(() => devProjects.find((p) => p.slug === route.params.s
 </script>
 
 <template>
-  <section v-if="project" class="w-4/5 max-w-6xl mx-auto py-20">
+  <section v-if="project" class="w-9/10 md:w-4/5 max-w-6xl mx-auto py-20">
     <RouterLink :to="{ path: '/portfolio', query: { tab: 'dev' } }" class="inline-flex items-center text-sm text-body hover:text-heading mb-8">
       ← Back to portfolio
     </RouterLink>

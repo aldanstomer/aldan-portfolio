@@ -1,5 +1,5 @@
 <template>
-    <div class="w-4/5 max-w-6xl mx-auto mt-24">
+    <div class="w-9/10 md:w-4/5 max-w-6xl mx-auto mt-24">
         <h1 class="text-4xl font-semibold text-heading mb-4">Contact</h1>
         <p class="text-body max-w-2xl mb-12">
         I am a lover of tech and design. Whether you would like a service, collaborate, or just want to chat, I would love to connect with you.

@@ -21,7 +21,7 @@ function setTab(tab) {
 
 
 <template>
-  <div class="overflow-auto mt-25 w-4/5 mx-auto border border-slate-700 rounded-xl shadow-xs">
+  <div class="overflow-auto mt-25 w-9/10 md:w-4/5 mx-auto border border-slate-700 rounded-xl shadow-xs">
     <ul class="text-sm font-medium text-center text-body divide-x divide-slate-700 flex items-stretch">
       <li class="w-full  flex">
         <button type="button" @click="setTab('dev')" :class="[ 'w-full h-full px-4 py-4 flex items-center justify-center text-center bg-slate-800', activeTab === 'dev' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
@@ -59,7 +59,7 @@ function setTab(tab) {
             <dt class="mb-2 text-2xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-125">
               10+
             </dt>
-            <dd>Tech Tools Mastered</dd>
+            <dd>Tools Mastered</dd>
           </div>
         </dl>   
         <ProjectGrid :projects="devProjects" />

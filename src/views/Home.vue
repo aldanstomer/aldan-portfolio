@@ -30,7 +30,7 @@ const featured = computed(() => [
 </style>
 
 <template>
-  <div class="w-4/5 max-w-6xl mx-auto mt-24">
+  <div class="w-9/10 md:w-4/5 max-w-6xl mx-auto mt-24">
     <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
       <div class="lg:col-span-7">
         <p class="text-blue-400 font-medium mb-3">Aldan Saint Omer</p>
@@ -72,8 +72,8 @@ const featured = computed(() => [
     <section class="mb-20">
       <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div>
-          <h2 class="text-2xl font-semibold text-heading mb-2">Let’s build something clean and useful.</h2>
-          <p class="text-body max-w-2xl">If you need a website, dashboard, or a polished digital product for your organization, I’m open to projects and collaborations.</p>
+          <h2 class="text-2xl font-semibold text-heading mb-2">Let’s build something together.</h2>
+          <p class="text-body max-w-2xl">If you need a website, dashboard, or a digital product for your organisation, I’m open to projects and collaborations.</p>
         </div>
         <div class="flex flex-wrap gap-3">
           <RouterLink to="/contact" class="inline-flex items-center justify-center text-white bg-blue-600 box-border border border-transparent hover:bg-blue-700 focus:ring-4 focus:ring-blue-900 shadow-xs font-medium leading-5 rounded-xl text-sm px-5 py-3 focus:outline-none">Contact</RouterLink>
