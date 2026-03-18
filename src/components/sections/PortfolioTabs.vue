@@ -23,13 +23,13 @@ function setTab(tab) {
 <template>
   <div class="overflow-auto mt-25 w-4/5 mx-auto border border-slate-700 rounded-xl shadow-xs">
     <ul class="text-sm font-medium text-center text-body divide-x divide-slate-700 flex items-stretch">
-      <li class="w-full">
-        <button type="button" @click="setTab('dev')" :class="[ 'inline-block w-full p-4  bg-slate-800', activeTab === 'dev' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
+      <li class="w-full  flex">
+        <button type="button" @click="setTab('dev')" :class="[ 'w-full h-full px-4 py-4 flex items-center justify-center text-center bg-slate-800', activeTab === 'dev' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
           Software Development
         </button>
       </li>
-      <li class="w-full">
-        <button type="button" @click="setTab('design')" :class="[ 'inline-block w-full p-4 bg-slate-800', activeTab === 'design' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
+      <li class="w-full  flex">
+        <button type="button" @click="setTab('design')" :class="[ 'w-full h-full px-4 py-4 flex items-center justify-center text-center bg-slate-800', activeTab === 'design' ? 'text-blue-600' : 'hover:bg-slate-700' ]">
           Graphic Design
         </button>
       </li>
