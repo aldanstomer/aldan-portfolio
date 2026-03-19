@@ -1,26 +1,26 @@
 const nicPostersImg = Object.values(
-  import.meta.glob("../assets/designs/nic-tm-posters/*.{jpg,JPG,png}", {
+  import.meta.glob("../assets/designs/nic-tm-posters/*.webp", {
     eager: true,
     import: "default",
   })
 )
 
 const cyenPostersImg = Object.values(
-  import.meta.glob("../assets/designs/cyen-posters/*.{jpg,JPG,png}", {
+  import.meta.glob("../assets/designs/cyen-posters/*.webp", {
     eager: true,
     import: "default",
   })
 )
 
 const dfhPostersImg = Object.values(
-  import.meta.glob("../assets/designs/dfh-posters/*.{jpg,JPG,png}", {
+  import.meta.glob("../assets/designs/dfh-posters/*.webp", {
     eager: true,
     import: "default",
   })
 )
 
 const dfhLogosImg = Object.values(
-  import.meta.glob("../assets/designs/dfh-logos/*.{jpg,JPG,png}", {
+  import.meta.glob("../assets/designs/dfh-logos/*.webp", {
     eager: true,
     import: "default",
   })

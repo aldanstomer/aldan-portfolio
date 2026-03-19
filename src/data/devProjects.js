@@ -43,7 +43,7 @@ export const devProjects = [
       "Tailwind CSS",
       "PocketBase"
     ],
-    role: "Full-Stack Developer",
+    role: "Full Stack Developer",
     problem: "Stakeholders needed a more accessible way to view and interact with rainfall station data and associated IDF information across the Caribbean.",
     solution: "Built a web interface that maps stations, filters results by country and duration, and presents IDF data in a clean, interactive format.",
     features: [

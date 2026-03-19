@@ -82,13 +82,13 @@ function setTab(tab) {
             <dt class="mb-2 text-2xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-125">
               5+
             </dt>
-            <dd>Brands and Campaigns Supported</dd>
+            <dd>Campaigns Supported</dd>
           </div>
           <div class="flex flex-col group cursor-default">
             <dt class="mb-2 text-2xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-125">
               30+
             </dt>
-            <dd>Visual Assets Created</dd>
+            <dd>Assets Created</dd>
           </div>
         </dl>
         <ProjectGrid :projects="designProjects" />

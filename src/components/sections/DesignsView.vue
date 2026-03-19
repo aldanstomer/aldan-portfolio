@@ -8,11 +8,11 @@ const project = computed(() => designProjects.find((p) => p.slug === route.param
 </script>
 
 <template>
-  <section v-if="project" class="w-9/10 md:w-4/5 max-w-6xl mx-auto py-20">
+  <section v-if="project" class="w-9/10 md:w-4/5 max-w-6xl mx-auto pt-20">
     <RouterLink :to="{ path: '/portfolio', query: { tab: 'design' } }" class="inline-flex items-center text-sm text-body hover:text-heading mb-8">
       ← Back to portfolio
     </RouterLink>
-    <div class="mb-10">
+    <div class="mb-6">
       <p class="text-sm uppercase tracking-wider text-blue-500 mb-3">{{ project.category }}</p>
       <h1 class="text-4xl md:text-5xl font-semibold text-heading mb-4">{{ project.title }}</h1>
       <p class="text-lg text-body max-w-3xl">{{ project.summary }}</p>

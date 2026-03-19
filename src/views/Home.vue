@@ -52,7 +52,7 @@ const featured = computed(() => [
           <h2 class="text-2xl font-semibold text-heading mb-2">Featured Projects</h2>
           <p class="text-body">A few pieces of work that best represent what I build and design.</p>
         </div>
-        <RouterLink :to="{ path: '/portfolio', query: { tab: 'dev' } }" class="text-sm text-blue-400 hover:text-blue-300">
+        <RouterLink :to="{ path: '/portfolio', query: { tab: 'dev' } }" class="text-sm text-blue-400 hover:text-blue-300 whitespace-nowrap">
           See all →
         </RouterLink>
       </div>
