@@ -20,7 +20,7 @@ const dfhPostersImg = Object.values(
 )
 
 const dfhLogosImg = Object.values(
-  import.meta.glob("../assets/designs/dfh-logos/*.webp", {
+  import.meta.glob("../assets/designs/dfh-logos/*.png", {
     eager: true,
     import: "default",
   })
